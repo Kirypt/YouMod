@@ -107,7 +107,7 @@
 %hook YTIElementRenderer
 - (NSData *)elementData {
     NSString *description = [self description];
-    NSLog(@"[YouMod Debug] Description from Renderer is: %@", description); // Will need to look into this later
+    NSLog(@"[YouMod Debug] Description from Renderer is: %{public}@", description);
     // Try all
     NSDictionary *filters = @{
         @"horizontal-video-shelf.eml" : @(IS_ENABLED(HideHoriShelf)),
